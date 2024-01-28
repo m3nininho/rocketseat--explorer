@@ -1,0 +1,19 @@
+{
+  "name": "01_api",
+  "version": "1.0.0",
+  "description": "API desenvolvida como atividade do curso da Rocketseat.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Luiz Augusto Menino Carlos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

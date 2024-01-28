@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biscoito da Sorte</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/fortune-cookie.jpg"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="closed-box">
+        <h1>Qual é a sua sorte de hoje?</h1>
+        <p>Abra o biscoito e descubra!</p>
+        <a href="#" id="handleClosedClick">
+          <img
+            class="fortune-cookie"
+            src="./assets/fortune-cookie.jpg"
+            alt="Desenho de um biscoito que contém dentro dele um pedaço de papel com uma 'sorte', geralmente um aforismo ou uma profecia vaga"
+          />
+        </a>
+      </div>
+      <div id="open-box" class="open-box hide">
+        <h1 class="title-open">Aqui está a sua sorte de hoje:</h1>
+        <div>
+          <div class="luckyBox">
+            <p id="luckyMessage"></p>
+          </div>
+        </div>
+        <img
+          src="./assets/opened-cookie.jpg"
+          alt="Desenho do biscoito da sorte aberto com a 'sorte' escrito em cima"
+        />
+        <button id="btnReset">Abrir outro biscoito</button>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

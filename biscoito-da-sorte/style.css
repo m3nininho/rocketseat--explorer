@@ -1,0 +1,126 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.hide {
+  display: none;
+}
+.open-box.hide {
+  display: none;
+}
+body {
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+main {
+  width: min(42.8rem, 90%);
+  margin-top: -12rem;
+  padding-top: 4.8rem;
+  padding-bottom: 6.4rem;
+  background: #ffffff;
+  box-shadow: 0rem 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+
+  text-align: center;
+}
+main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #34355b;
+  width: 24.8rem;
+  margin: auto;
+}
+main p {
+  margin-top: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #34355b;
+}
+main img {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  width: 25rem;
+}
+.open-box {
+  display: grid;
+  gap: 1.7rem;
+  justify-content: center;
+}
+.title-open {
+  width: 29.7rem;
+}
+.luckyBox {
+  width: 29rem;
+  margin: auto;
+  padding: 1rem;
+  background: #e4edf1;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(85, 85, 85, 0.5);
+}
+#luckyMessage {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #000;
+  font-family: "Dancing Script", cursive;
+}
+button {
+  width: 17.4rem;
+  height: 5.2rem;
+  margin: auto;
+
+  background: #ff9500;
+  border-radius: 0.4rem;
+  border: none;
+
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  cursor: pointer;
+}
+button:hover {
+  background: #f99100c0;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+}
+.fortune-cookie:hover {
+  animation: shake 0.06s ease-in-out infinite alternate-reverse;
+}
+.luckyBox {
+  animation: toAppear 0.7s ease-in;
+}
+
+@keyframes shake {
+  from {
+    transform: rotate(0.006turn);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes toAppear {
+  0% {
+    transform: translateY(200px);
+    scale: 0.1;
+    position: relative;
+    bottom: -120px;
+  }
+  100% {
+    position: relative;
+
+    bottom: -60px;
+    transform: translateY(10px);
+    scale: 1;
+  }
+}

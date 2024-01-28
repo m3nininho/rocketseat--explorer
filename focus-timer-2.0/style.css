@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    font-size: 62.5%;
+    --bg-body: #fff;
+    --color-number: #323238;
+    --bg-music-select: #02799d;
+    --bg-music: #e1e1e6;
+  }
+  body {
+    font-size: 1.6rem;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-body);
+  }
+  img {
+    cursor: pointer;
+  }
+  .container {
+    max-width: 82rem;
+    display: flex;
+    gap: 19.2rem;
+    align-items: center;
+  }
+  
+  .time-panel span {
+    color: var(--color-number);
+    font-weight: 500;
+    font-size: 12.6rem;
+  }
+  .controls {
+    display: flex;
+    margin-top: 4.9rem;
+    margin-left: 0.5rem;
+    gap: 4rem;
+  }
+  .music-painel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+  .music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 15rem;
+    border-radius: 2.4rem;
+    background-color: var(--bg-music);
+  }
+  .music-select {
+    background-color: var(--bg-music-select);
+  }
