@@ -15,7 +15,7 @@ CSS-in-JS aproveita os metodos atuais de componetização em javascript para cri
 
 ## Styled Components
 
-Styled Components foi desenvolvido para melhorar a maneira uqe lidamos com o css nos componentes.
+Styled Components foi desenvolvido para melhorar a maneira que lidamos com o css nos componentes.
 
 #### Vantagens do Styled Components
 
